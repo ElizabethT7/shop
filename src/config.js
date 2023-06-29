@@ -1,4 +1,4 @@
-const API_KEY = import.meta.env.REACT_APP_API_KEY;
+const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 const API_URL = 'https://fortniteapi.io/v2/shop?lang=ru';
 
