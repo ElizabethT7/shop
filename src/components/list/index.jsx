@@ -1,7 +1,7 @@
 import Item from "../item";
 
 function List(props) {
-  const { items = [] } = props;
+  const { items = [], addToBasket = Function.prototype } = props;
 
   //console.log(items);
 
@@ -12,7 +12,7 @@ function List(props) {
   return (
     <div className="items">
       {items.map((item) => {
-        return <Item key={item.mainId} {...item} />;
+        return <Item key={item.mainId} {...item} addToBasket={addToBasket}/>;
       })}
     </div>
   );
