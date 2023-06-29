@@ -1,12 +1,16 @@
-import './App.css'
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Main from "./components/main";
+import "./App.css";
 
 function App() {
-
   return (
     <>
-      <h1>Vite + React</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
